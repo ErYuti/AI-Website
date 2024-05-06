@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container1">
+      <h1>Shoes Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#catalog">Catalog</a></li>
+          <li><a href="#payment">Payment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="parallax1">
+      <h2>About Us</h2>
+      <p>Welcome to our Shoes Store! We offer a wide range of stylish and comfortable shoes for every occasion.</p>
+      <button id="learnMoreBtn">Learn More</button>
+    </div>
+  </section>
+
+  <section id="catalog" class="catalog-section">
+    <div class="parallax2">
+      <div class="overlay"></div>
+      <div class="container2">
+        <h2>Catalog</h2>
+        <div class="catalog-cards">
+          <div class="catalog-card">
+            <img src="shoe1.jpg" alt="Shoe 1">
+            <h3>Shoe 1</h3>
+            <p>Description of Shoe 1</p>
+            <button>Buy Now</button>
+          </div>
+          <div class="catalog-card">
+            <img src="shoe2.jpg" alt="Shoe 2">
+            <h3>Shoe 2</h3>
+            <p>Description of Shoe 2</p>
+            <button>Buy Now</button>
+          </div>
+          <!-- Add more catalog cards as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="payment" class="payment-section">
+    <div class="container">
+      <h2>Payment</h2>
+      <button id="paymentBtn">Make Payment</button>
+      <div class="payment-popup" id="paymentPopup">
+        <form id="paymentForm">
+          <h3>Enter Payment Details</h3>
+          <input type="text" placeholder="Card Number" required>
+          <input type="text" placeholder="Expiration Date" required>
+          <input type="text" placeholder="CVV" required>
+          <button type="submit">Submit</button>
+        </form>
+        <span class="close-btn" id="closeBtn">&times;</span>
+      </div>
+      <div class="success-message" id="successMessage">
+        <p>Payment successful!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p>123-456-7890</p>
+        </div>
+        <div class="contact-card">
+          <h3>Address</h3>
+          <p>123 Main Street, City, Country</p>
+        </div>
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>info@example.com</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="text" placeholder="Address" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="success-message" id="successMessage">
+          <p>Message sent successfully!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Shoes Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
